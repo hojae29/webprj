@@ -12,7 +12,11 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     </servlet>
 
-    <!-- 모든 URL을 dispatcherServlet으로 매핑-->
+    <!--
+        url-pattern을 "/" 으로 설정하면 webapp 폴더 안에있는 jsp 파일에 접근이 가능해진다.
+        "url-pattern을 /*"으로 설정하면 폴더 경로로 직접접근을 막을 수 있지만, 컨트롤러에서 뷰페이지를 요청할때 dispatcher servlet을 거치기 때문에 dispatcher-servlet.xml에 뷰 페이지 요청에 맞게 설정해줘야하는 번거로움이 발생한다.
+        이를 해결하기 위해 url-pattern을 "/"으로 설정한뒤에 직접접근이 불가능한 WEB-INF 폴더 안에 jsp파일들을 넣어놓는다.
+    -->
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/</url-pattern>
