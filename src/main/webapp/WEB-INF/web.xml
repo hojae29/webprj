@@ -15,7 +15,7 @@
     <!-- 모든 URL을 dispatcherServlet으로 매핑-->
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
     <display-name>Welcome to Tomcat</display-name>
