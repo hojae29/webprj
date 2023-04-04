@@ -28,7 +28,7 @@
         <property name="order" value="2"/>
     </bean>
 
-    <bean id="noticeService" class="com.newlecture.web.service.NoticeService"/>
+    <bean id="noticeService" class="com.newlecture.web.service.jdbc.JDBCNoticeService"/>
 
     <!-- /** 로 시작하는 URL로 요청이오면 /static/ 경로에서 리소스를 찾는다. -->
     <mvc:resources mapping="/**" location="/static/"/>
