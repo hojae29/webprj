@@ -1,30 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-
-<head>
-	<title>코딩 전문가를 만들기 위한 온라인 강의 시스템</title>
-	<meta charset="UTF-8">
-	<title>공지사항목록</title>
-
-	<link href="/css/layout.css" type="text/css" rel="stylesheet" />
-	<link href="/css/index.css" type="text/css" rel="stylesheet" />
-	<script>
-
-	</script>
-</head>
-
-<body>
-<!-- header 부분 -->
-
-
-
-<!-- --------------------------- <body> --------------------------------------- -->
-
-<!-- content 부분 -->
-
-
-
 <div id="visual" class="">
 	<div class="content-container">
 		<h2 class="hidden">신규 강좌목록</h2>
@@ -37,15 +11,15 @@
 
 			<li class="banner1">
 				<a href="customer/event/1">
-					<img src="admin/board/event/1/banner-java.png" data-id="1" style="cursor: pointer;" />
+					<img src="admin/board/event/1/banner-java.png" data-id="1" style="cursor: pointer;"/>
 				</a>
 			</li>
 
 		</ul>
 
 
-
-		<ul class="banner-button-list" style="color:#ffff00; font-size:20px;position:absolute; left:10px; bottom:5px; z-index: 100px; display: flex; flex-direction: row;">
+		<ul class="banner-button-list"
+			style="color:#ffff00; font-size:20px;position:absolute; left:10px; bottom:5px; z-index: 100px; display: flex; flex-direction: row;">
 			<li></li>
 		</ul>
 
@@ -54,7 +28,8 @@
 </div>
 <div id="notice">
 	<div class="content-container">
-            <span class="title">제대로된 전문가들이 만들어가는 <span style="color:yellow;font-size:15px;">IT PROFESSIONAL <span style="color:#00ffff;">NEW</span>
+            <span class="title">제대로된 전문가들이 만들어가는 <span style="color:yellow;font-size:15px;">IT PROFESSIONAL <span
+					style="color:#00ffff;">NEW</span>
                     ONLINE <span style="color:#00ffff;">LECTURE</span> MARKET</span></span>
 		<!--<a class="detail-button">자세히</a>-->
 	</div>
@@ -65,7 +40,7 @@
 		<section class="guide">
 			<h1 class="title">강의 플레이어 사용방법 안내</h1>
 			<div class="margin-top">
-				<a href="customer/faq/1"><img src="images/customer/installInfo.png" /></a>
+				<a href="customer/faq/1"><img src="images/customer/installInfo.png"/></a>
 			</div>
 			<!-- <div>
         2
@@ -125,7 +100,6 @@
 </div>
 
 <!-- ----- 커뮤니티 시작 줄 -------------------------------------------------------------------------------------------- -->
-
 
 
 <!-- ----- 커뮤니티 시작 줄 -------------------------------------------------------------------------------------------- -->
@@ -259,7 +233,7 @@
             </li> -->
 			<li class="item-course normal event">
 				<div>
-					<a href="course/2"><img src="images/course/java.png" /></a>
+					<a href="course/2"><img src="images/course/java.png"/></a>
 				</div>
 				<div>
 					<div>
@@ -301,24 +275,9 @@
 	<div class="content-container">
 		<h3 class="-text- center green bold -margin- top">협력업체</h3>
 		<ul class="-list- horizontal center -margin- bottom top b20">
-			<li><a target="_blank" href="http://www.notepubs.com"><img src="images/notepubs.png" alt="노트펍스" /></a></li>
-			<li><a target="_blank" href="http://www.namoolab.com"><img src="images/namoolab.png" alt="나무랩연구소" /></a></li>
+			<li><a target="_blank" href="http://www.notepubs.com"><img src="images/notepubs.png" alt="노트펍스"/></a></li>
+			<li><a target="_blank" href="http://www.namoolab.com"><img src="images/namoolab.png" alt="나무랩연구소"/></a></li>
 
 		</ul>
 	</div>
 </main>
-<script>
-
-</script>
-
-
-
-
-<!-- ------------------- <footer> --------------------------------------- -->
-
-
-
-
-</body>
-
-</html>
