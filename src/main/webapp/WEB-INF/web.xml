@@ -25,6 +25,7 @@
             <param-name>contextConfigLocation</param-name>
             <param-value>/WEB-INF/spring/servlet-context.xml</param-value>
         </init-param>
+        <!-- 기본 설정은 첫 요청이 올때 servlet이 메모리에 올라간다. 이렇게 되면 첫 요청시 시간이 오래걸리는 문제 발생-->
         <!-- 톰캣이 시작될 때 이 서블릿을 로드하고 싶을 때 설정 (값은 우선순위) -->
         <load-on-startup>1</load-on-startup>
         <!-- 비동기적으로 servlet 로드 -->
