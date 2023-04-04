@@ -8,7 +8,9 @@
         https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <bean id="/index" class="com.newlecture.web.controller.IndexController"/>
-    <bean id="/notice/list" class="com.newlecture.web.controller.notice.ListController"/>
+    <bean id="/notice/list" class="com.newlecture.web.controller.notice.ListController">
+        <property name="noticeService" ref="noticeService"/>
+    </bean>
     <bean id="/notice/detail" class="com.newlecture.web.controller.notice.DetailController"/>
 
     <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
@@ -25,6 +27,8 @@
         <property name="suffix" value=".jsp"/>
         <property name="order" value="2"/>
     </bean>
+
+    <bean id="noticeService" class="com.newlecture.web.service.NoticeService"/>
 
     <!-- /** 로 시작하는 URL로 요청이오면 /static/ 경로에서 리소스를 찾는다. -->
     <mvc:resources mapping="/**" location="/static/"/>

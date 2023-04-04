@@ -13,7 +13,7 @@ import java.util.List;
 import com.newlecture.web.entity.Notice;
 
 public class NoticeService {
-	private String url = "jdbc:oracle:thin:@192.168.0.2:1521:XE";
+	private String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
 	private String uid = "hojae";
 	private String pwd = "1234";
 	private String driver = "oracle.jdbc.driver.OracleDriver";
@@ -23,7 +23,7 @@ public class NoticeService {
 		int start = 1 + (page-1)*10;     // 1, 11, 21, 31, ..
 		int end = 10*page; // 10, 20, 30, 40...
 		
-		String sql = "SELECT * FROM NOTICE_VIEW WHERE "+field+" LIKE ? AND NUM BETWEEN ? AND ?";	
+		String sql = "SELECT * FROM NOTICE WHERE "+field+" LIKE ? AND ID BETWEEN ? AND ?";
 		
 		Class.forName(driver);
 		Connection con = DriverManager.getConnection(url,uid, pwd);
