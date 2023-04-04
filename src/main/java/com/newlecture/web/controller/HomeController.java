@@ -4,12 +4,18 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class IndexController {
+public class HomeController {
 
     @RequestMapping("/index")
-    public void main() {
-        System.out.println("main 메서드 실행");
+    public String index() {
+        return "root.index";
     }
+
+    @RequestMapping("/help")
+    public void help() {
+        System.out.println("help 메서드 실행");
+    }
+}
 
 /*    @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
@@ -21,4 +27,4 @@ public class IndexController {
 
         return mv;
     }*/
-}
+
