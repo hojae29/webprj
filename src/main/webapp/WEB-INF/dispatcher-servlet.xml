@@ -11,9 +11,19 @@
     <bean id="/notice/list" class="com.newlecture.web.controller.notice.ListController"/>
     <bean id="/notice/detail" class="com.newlecture.web.controller.notice.DetailController"/>
 
+    <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"/>
+        <property name="order" value="1"/>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+        <property name="definitions" value="/WEB-INF/tiles.xml"/>
+    </bean>
+
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/view/"/>
         <property name="suffix" value=".jsp"/>
+        <property name="order" value="2"/>
     </bean>
 
     <!-- /** 로 시작하는 URL로 요청이오면 /static/ 경로에서 리소스를 찾는다. -->
