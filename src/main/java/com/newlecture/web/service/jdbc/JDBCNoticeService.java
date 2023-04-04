@@ -3,6 +3,7 @@ package com.newlecture.web.service.jdbc;
 import com.newlecture.web.entity.Notice;
 import com.newlecture.web.service.NoticeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
 import java.sql.*;
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+@Service
 public class JDBCNoticeService implements NoticeService {
 
     @Autowired
