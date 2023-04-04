@@ -14,10 +14,6 @@
     <!-- <mvc:annotation-driven/> 태그를 작성하지 않으면 url 매핑이 안된다 -->
     <mvc:annotation-driven/>
 
-    <!--<bean id="/index" class="com.newlecture.web.controller.IndexController"/>-->
-    <bean id="/notice/list" class="com.newlecture.web.controller.notice.ListController"/>
-    <bean id="/notice/detail" class="com.newlecture.web.controller.notice.DetailController"/>
-
     <bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
         <property name="definitions" value="/WEB-INF/tiles.xml"/>
     </bean>

@@ -10,11 +10,6 @@ public class HomeController {
     public String index() {
         return "root.index";
     }
-
-    @RequestMapping("/help")
-    public void help() {
-        System.out.println("help 메서드 실행");
-    }
 }
 
 /*    @Override
