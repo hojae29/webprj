@@ -2,6 +2,7 @@ package com.newlecture.web.controller.notice;
 
 import com.newlecture.web.entity.Notice;
 import com.newlecture.web.service.NoticeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
@@ -11,11 +12,8 @@ import java.util.List;
 
 public class ListController implements Controller {
 
+    @Autowired
     private NoticeService noticeService;
-
-    public void setNoticeService(NoticeService noticeService) {
-        this.noticeService = noticeService;
-    }
 
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {

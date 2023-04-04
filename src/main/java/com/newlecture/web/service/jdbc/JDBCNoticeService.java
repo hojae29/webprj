@@ -2,6 +2,7 @@ package com.newlecture.web.service.jdbc;
 
 import com.newlecture.web.entity.Notice;
 import com.newlecture.web.service.NoticeService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.sql.DataSource;
 import java.sql.*;
@@ -11,11 +12,8 @@ import java.util.List;
 
 public class JDBCNoticeService implements NoticeService {
 
+    @Autowired
     private DataSource dataSource;
-
-    public void setDataSource(DataSource dataSource) {
-        this.dataSource = dataSource;
-    }
 
     public List<Notice> getList(int page, String field, String query) throws ClassNotFoundException, SQLException {
 
