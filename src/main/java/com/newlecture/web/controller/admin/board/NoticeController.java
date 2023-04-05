@@ -15,8 +15,9 @@ public class NoticeController {
 
     @ResponseBody
     @RequestMapping("/reg")
-    public String reg() {
-        return "test";
+    public String reg(String title, String content) {
+
+        return String.format("title:%s<br> content:%s<br>", title, content);
     }
 
     @RequestMapping("/edit")
