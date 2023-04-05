@@ -2,13 +2,17 @@ package com.newlecture.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.servlet.http.HttpServletResponse;
 
 @Controller
 public class HomeController {
 
+    @ResponseBody
     @RequestMapping("/index")
-    public String index() {
-        return "root.index";
+    public String index(HttpServletResponse response) {
+        return "Hello Index";
     }
 }
 
