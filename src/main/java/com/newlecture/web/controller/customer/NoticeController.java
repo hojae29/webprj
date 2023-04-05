@@ -18,7 +18,7 @@ public class NoticeController {
     private NoticeService noticeService;
 
     @RequestMapping("/list")
-    public String list(@RequestParam(name = "p", defaultValue = "1") int page) throws SQLException, ClassNotFoundException {
+    public String list(@RequestParam(value = "p", required = false) Integer page) throws SQLException, ClassNotFoundException {
         System.out.println(page);
         List<Notice> list = noticeService.getList(1, "TITLE", "");
         return "notice.list";
